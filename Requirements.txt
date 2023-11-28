@@ -1,0 +1,6 @@
+Cuda 11.8 (CUDNN?)
+All Python Packages (PyTorch, NumPy, etc.)
+Run setup.py in AlphaPose Folder? (Might download required python packages)
+
+Change call_process_video.ps1 to a bash script
+Change alpha_pose_dir variable in main.py

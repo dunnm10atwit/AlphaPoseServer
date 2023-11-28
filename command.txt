@@ -1,0 +1,13 @@
+./scripts/inference.sh $C:\Users\dunnm10\AlphaPose\configs\coco_wholebody\resnet\256x192_res152_lr1e-3_1x-duc.yaml $C:\Users\dunnm10\VisualStudio\SE-AlphaPose\fast_res50_256x192.pth $C:\Users\dunnm10\VisualStudio\SE-AlphaPose\TestVidei_Jake.mp4 $C:\Users\dunnm10\VisualStudio\SE-AlphaPose, --detector tracker
+
+python demo_inference.py --cfg configs/halpe_136/resnet/256x192_res50_lr1e-3_2x-regression.yaml --checkpoint pretrained_models/fast_res50_256x192.pth --indir examples/demo/ --save_img
+
+python demo_inference.py --cfg configs/halpe_68_noface/resnet/256x192_res50_lr1e-3_2x-dcn-combined.yaml --checkpoint pretrained_models/noface_fast50_dcn_combined_256x192.pth --indir examples/demo/ --save_img
+
+python demo_inference.py --cfg configs/halpe_26/resnet/256x192_res50_lr1e-3_1x.yaml --checkpoint pretrained_models/halpe26_fast_res50_256x192.pth --indir examples/demo/ --save_img
+
+-works-
+python demo_inference.py --cfg configs/halpe_26/resnet/256x192_res50_lr1e-3_1x.yaml --checkpoint pretrained_models/halpe26_fast_res50_256x192.pth --video examples/video/TestVidei_Jake.mp4 --save_video
+
+-works-
+python demo_inference.py --cfg configs/halpe_26/resnet/256x192_res50_lr1e-3_1x.yaml --checkpoint pretrained_models/halpe26_fast_res50_256x192.pth --video examples/video/TestVidei_Jake.avi --save_video
