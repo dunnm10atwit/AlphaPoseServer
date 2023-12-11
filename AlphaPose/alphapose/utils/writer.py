@@ -13,7 +13,7 @@ from alphapose.utils.pPose_nms import pose_nms, write_json
 
 DEFAULT_VIDEO_SAVE_OPT = {
     'savepath': 'examples/res/1.mp4',
-    'fourcc': cv2.VideoWriter_fourcc(*'mp4v'),
+    'fourcc': cv2.VideoWriter_fourcc(*'x264'),
     'fps': 25,
     'frameSize': (640, 480)
 }

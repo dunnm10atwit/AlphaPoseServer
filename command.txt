@@ -11,3 +11,6 @@ python demo_inference.py --cfg configs/halpe_26/resnet/256x192_res50_lr1e-3_1x.y
 
 -works-
 python demo_inference.py --cfg configs/halpe_26/resnet/256x192_res50_lr1e-3_1x.yaml --checkpoint pretrained_models/halpe26_fast_res50_256x192.pth --video examples/video/TestVidei_Jake.avi --save_video
+
+-works on machine-
+python process_video.py --cfg configs/halpe_26/resnet/256x192_res50_lr1e-3_1x.yaml --checkpoint pretrained_models/halpe26_fast_res50_256x192.pth --video /home/jakebres/AlphaPoseServer/BrianShawToss.mp4 --save_video
